@@ -16,6 +16,8 @@ export class UsersComponent implements OnInit {
   constructor(private apiService: ApiService, private router: Router,  private route: ActivatedRoute,) { }
 
   ngOnInit(): void {
+
+    // find user's post page wich equal [userId = userId]
     this.id = this.route.snapshot.params['usersId'];
       
     this.apiService.find(this.id).subscribe((Users: any)=>{

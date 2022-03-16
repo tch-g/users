@@ -8,6 +8,7 @@ import { ApiService } from 'src/app/service/api.service';
 })
 export class ListComponent implements OnInit {
 users: any
+// nor do i know what to comment on
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {

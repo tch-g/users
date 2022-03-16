@@ -13,6 +13,9 @@ userId:any
 posts:any
 users:any
 id:any
+
+ // inject router for lazy loading also service to find uid
+
   constructor(private apiService: ApiService, private router: Router,  private route: ActivatedRoute,) { }
 
   ngOnInit(): void {
