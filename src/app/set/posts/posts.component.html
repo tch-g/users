@@ -1,1 +1,7 @@
-<p>posts works!</p>
+<button (click)="list()">List</button>
+<div *ngFor="let post of posts">
+    <div>{{post.id}}</div>
+    <div>{{post.title}}</div>
+    <div>{{post.body}}</div>
+
+</div>

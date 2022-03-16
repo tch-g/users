@@ -11,18 +11,18 @@ const routes: Routes = [
       
     path: '',
     redirectTo: 'list',
-    pathMatch: "full"
+    
   },
   {
     path: 'list',
     component: ListComponent
   },
   {
-    path: 'users',
+    path: ':usersId/users',
     component: UsersComponent
   },
   {
-    path: 'posts',
+    path: ':usersId/posts',
     component: PostsComponent
   },
   
