@@ -1,3 +1,8 @@
-<div *ngFor="let user of users">
-    <button [routerLink]="[ '/', user.id, 'users']">{{user.name}}</button><br><br>
+<div class="container">
+    <h1>List User</h1>
+    <div class="first d-flex justify-content-center ">
+        <div *ngFor="let user of users">
+            <button type="button" class="btn btn-primary ms-2" [routerLink]="[ '/', user.id, 'users']">{{user.name}}</button><br><br>
+        </div>
+    </div>
 </div>
